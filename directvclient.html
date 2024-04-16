@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Recargate Online</title>
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-md-5">
+	<img src="img/logo.png" alt="Logo Portal Recargas">
+	<a class="navbar-brand" href="#">Recargas online</a>
+</nav>
+<div class="header">
+	<h1>Recarga DirecTV</h1>
+</div>
+<form action="pago.html" method="POST">
+<div class="container-fluid">
+	<div class="row d-flex justify-content-center">
+		<div class="col-md-6 col-10 contenedor_recarga">
+			<h1>DirecTV será recargado directamente</h1>
+			
+			<div class="row d-flex justify-content-center align-items-center flex-column">
+				<div class="col-md-6 col-12">
+					<img src="img/satel.jpg
+" alt="" width="14" height="20">
+					<label for="numerorecarga">Elegí una opción</label>
+				</div>
+
+				<div class="prepaid-recharge-body">
+            <div class="input-title"></div>
+            
+                <input type="radio" name="ar-identification" value="dni" id="identification-dni" data-hinttext="Ingresá el DNI del titular de la cuenta." data-minchar="7" data-maxchar="11"/>&nbsp;
+                    <label for="identification-dni">DNI</label><br/>
+            
+                <input type="radio" name="ar-identification" value="smart-card" id="identification-smart-card" data-placeholdertext="000222444666" data-hinttext="El Nº de Tarjeta Prepago es de 12 dígitos. Encontralo en el canal 100 de DIRECTV." data-minchar="12" data-maxchar="12"/>&nbsp;
+                    <label for="identification-smart-card">N° de Tarjeta Prepago</label><br/>
+            
+                <input type="radio" name="ar-identification" value="account-number" id="identification-account-number" data-hinttext="Tu Nº de Cliente lo encontrás en tu factura." data-minchar="5" data-maxchar="10"/>&nbsp;
+                    <label for="identification-account-number">Nº de Cliente</label><br/>
+            
+            <input type="text" id="cellphone2" name="cellphone" required class="input-smart-card directv-input touched" minlength="7" maxlength="12"/>
+            
+        </div>
+
+					
+				</div>
+				<button>Siguiente</button>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<input type="hidden" name="price" value="00
+">
+<input type="hidden" name="icon3" value="satel.jpg
+">
+<input type="hidden" name="empresa" value="DirecTV">
+<input type="hidden" name="impresion" value="Su servicio">
+<input type="hidden" name="impresion2" value="Cliente">
+</form>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script></body>
+</html>
